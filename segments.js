@@ -74,7 +74,10 @@ class text_rainbow{
 			preview += this.preview_html.format(letter, HSLToHex(color_hsl))
 			color_hsl[0] += parseInt(this.offset)
 			if (color_hsl[0] >= 360){
-				color_hsl[0] = 0
+				color_hsl[0] -= 360
+			}
+			if (color_hsl[0] <= 0){
+				color_hsl[0] += 360
 			}
 		}
 		return preview
