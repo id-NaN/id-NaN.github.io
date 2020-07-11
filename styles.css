@@ -98,3 +98,35 @@ body{
 	margin: 20px;
 	display: block;
 }
+
+
+
+@media screen and (max-width: 1000px){
+	*{
+		position: relative;
+	}
+	body{
+		display: block;
+		font-size: 20px;
+	}
+	textarea,button{
+		font-size: 20px;
+	}
+	#main_segment_container{
+		width: 90vw;
+		height: 70vh;
+		top: 100px
+	}
+	.segment_container{
+		width: 90%
+	}
+	#output_area{
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: flex;
+	}
+	#copy_button{
+		height: min-content;
+	}
+}
