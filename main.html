@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Terraria chat message generator</title>
+	<script type="text/javascript" src="color_convert.js"></script>
+	<script type="text/javascript" src="segments.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body onload="load_data()">
+	<div id="main_option_container">
+		<button id="reset_button" onclick="reset_editor()">reset</button>
+		<div id="select_segment_dropdown" class="dropdown">
+			<button class="dropdown_button">new segment</button>
+			<div class="dropdown_content">
+			</div>
+		</div>
+	</div>
+	<div id="main_segment_container">
+	</div>
+	<div id="output_area">
+		<div class="output_area" id="preview_area"></div>
+		<textarea readonly class="output_area" id="result_area"></textarea>
+		<button id="copy_button" onclick="copy(result_area)">copy</button>
+	</div>
+</body>
+</html>
