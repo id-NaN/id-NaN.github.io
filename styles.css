@@ -43,6 +43,7 @@ body{
 }
 .dropdown:hover .dropdown_content {
 	display: block;
+	z-index: 10;
 }
 .dropdown_content a:hover{
 	background-color: #c3c3c3
@@ -115,7 +116,8 @@ body{
 	#main_segment_container{
 		width: 90vw;
 		height: 70vh;
-		top: 100px
+		top: 120px;
+		position: fixed;
 	}
 	.segment_container{
 		width: 90%
