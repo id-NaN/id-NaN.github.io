@@ -28,7 +28,9 @@ function update_segment_display() {
 	for (var i = 0; i < message.length; i++) {
 		segment = message[i];
 		segment_html +=
-			"<div class=\"segment_container\">" + segment.get_html() + "</div>"
+			"<div class=\"segment_container\">\
+			<button class=\"delete_button\" onclick=\"delete_segment({1})\">X</button>{0}\
+			</div>".format(segment.get_html(), i)
 	}
 	let container = document.getElementById("main_segment_container");
 	container.innerHTML = segment_html;
@@ -84,6 +86,14 @@ function process_data() {
 			}
 		}
 	}
+	update_result_display()
+}
+
+
+
+function delete_segment(index) {
+	message.splice(index, 1)
+	update_segment_display()
 	update_result_display()
 }
 
