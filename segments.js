@@ -57,7 +57,7 @@ class text_rainbow{
 		this.text = ""
 		this.color = "#000000"
 		this.offset = 0
-		this.base_html = "<p>colored text</p>\
+		this.base_html = "<p>rainbow text</p>\
 				<textarea id=\"text\" class=\"input\" style=\"width:300px;\">{0}</textarea>\
 				<input type=\"color\" id=\"color\" class=\"input\" value=\"{1}\"></input>\
 				<input type=\"number\" id=\"offset\" class=\"input\" value=\"{2}\"></input>"
